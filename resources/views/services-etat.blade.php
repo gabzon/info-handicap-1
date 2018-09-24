@@ -20,10 +20,27 @@ Template Name: Services Etat
     </ul>
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        AI
+        <br>
+        @php
+          $ai_page = get_page_by_title( 'Thérapies', OBJECT ,'page' );
+          echo $ai_page->post_title;
+          echo $ai_page->post_content;
+        @endphp
       </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">API</div>
-      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Macaron</div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        @php
+          $api_page = get_page_by_title( 'Thérapies', OBJECT ,'page' );
+          echo $api_page->post_title;
+          echo $api_page->post_content;
+        @endphp
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        @php
+          $macaron_page = get_page_by_title( 'Thérapies', OBJECT ,'page' );
+          echo $macaron_page->post_title;
+          echo $macaron_page->post_content;
+        @endphp
+      </div>
     </div>
     @include('partials.content-page')
   @endwhile
