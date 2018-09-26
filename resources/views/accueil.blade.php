@@ -8,7 +8,11 @@ Template Name: Accueil
   @while(have_posts()) @php the_post() @endphp
 
     <div class="jumbotron text-center" style="margin-bottom:0">
-      <h1 class="display-5 dosis">Informations utiles pour les parents avec des enfants handicapés</h1>
+      <div class="row justify-center">
+        <div class="col-8">
+          <h1 class="display-5 dosis">Informations utiles pour les parents d'enfants en situation de handicap mental vivant dans le canton de Genève</h1>
+        </div>
+      </div>
     </div>
 
     <div class="row no-gutters">
