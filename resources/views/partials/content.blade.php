@@ -4,7 +4,7 @@ $link = get_post_meta(get_the_ID(),'ih-link', true);
 
 @php
 if ( has_category('info-pratique')) {
-  $link = get_the_permalink()
+  $link = get_the_permalink();
 }
 @endphp
 
