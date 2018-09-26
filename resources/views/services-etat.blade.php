@@ -23,23 +23,23 @@ Template Name: Services Etat
         <br>
         @php
           $ai_page = get_page_by_title( 'Assurance invalidité (AI)', OBJECT ,'page' );
-          echo $ai_page->post_title;
+          //echo $ai_page->post_title;
           echo $ai_page->post_content;
         @endphp
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <br>
         @php
-          $api_page = get_page_by_title( 'api', OBJECT ,'page' );
-          echo $api_page->post_title;
+          $api_page = get_page_by_title( 'Allocation pour impotent (API)', OBJECT ,'page' );
+          //echo $api_page->post_title;
           echo $api_page->post_content;
         @endphp
       </div>
       <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
         <br>
         @php
-          $macaron_page = get_page_by_title( 'macaron', OBJECT ,'page' );
-          echo $macaron_page->post_title;
+          $macaron_page = get_page_by_title( 'Macaron', OBJECT ,'page' );
+          //echo $macaron_page->post_title;
           echo $macaron_page->post_content;
         @endphp
       </div>
