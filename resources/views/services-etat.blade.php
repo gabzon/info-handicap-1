@@ -22,7 +22,7 @@ Template Name: Services Etat
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <br>
         @php
-          $ai_page = get_page_by_title( 'ai', OBJECT ,'page' );
+          $ai_page = get_page_by_title( 'Assurance invalidité (AI)', OBJECT ,'page' );
           echo $ai_page->post_title;
           echo $ai_page->post_content;
         @endphp
