@@ -4,7 +4,7 @@
   <div class="container">
     <a class="brand navbar-brand b ttu" href="<?= esc_url(home_url('/')); ?>">{{ get_bloginfo('name', 'display') }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       @if (has_nav_menu('primary_navigation'))
