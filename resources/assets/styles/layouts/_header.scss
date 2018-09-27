@@ -5,3 +5,11 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.dropdown-menu .nav-item a.nav-link {
+  color: darkgrey;
+}
+
+.dropdown-menu .nav-item a.nav-link:hover {
+  color: $primary;
+}
