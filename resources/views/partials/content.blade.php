@@ -3,7 +3,7 @@ $link = get_post_meta(get_the_ID(),'ih-link', true);
 @endphp
 
 @php
-if ( has_category('info-pratique')) {
+if ( get_post_meta(get_the_ID(),'ih-link', true) ) {
   $link = get_the_permalink();
 }
 @endphp
@@ -25,7 +25,7 @@ if ( has_category('info-pratique')) {
         <a class="no-underline black dim" href="{{ $link }}" target="_blank">
           <h1 class="f3 fw1 dosis-bold mt0 lh-title">{{ get_the_title() }}</h1>
         </a>
-        <p class="f6 f5-l lh-copy dosis">@php the_excerpt() @endphp</p>
+        <p class="f6 f5-l lh-copy dosis">@php the_content() @endphp</p>
         <p class="f6 lh-copy mv0">@include('partials/entry-meta')</p>
       </div>
     </div>
