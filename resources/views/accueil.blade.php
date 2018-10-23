@@ -51,7 +51,7 @@ Template Name: Accueil
           <div class="card bg-dark text-white br0 bn">
             <img src="@asset('images/therapies.jpg')" alt="" class="card-img br0">
             <div class="card-img-overlay hover-bg-black-40">
-              <h3 class="card-title b ttu dosis" style="text-shadow: 1px 1px black;">Thérapies</h3>
+              <h3 class="card-title b ttu dosis" style="text-shadow: 1px 1px black;">Spécialistes / Thérapeutes</h3>
             </div>
           </div>
         </a>
