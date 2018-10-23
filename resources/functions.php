@@ -90,3 +90,12 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+
+    // add_action('wp_head', 'show_template');
+    // function show_template() {
+    // 	global $template;
+    //     echo '<div style="background:red; position:fixed; bottom:10px;">';
+    //     print_r($template);
+    //     echo '</div>';
+    // }
