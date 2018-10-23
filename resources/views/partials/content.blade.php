@@ -22,7 +22,7 @@ if ( get_post_meta(get_the_ID(),'ih-link', true) ) {
       </div>
       <div class="col-12 col-sm-11 col-md-10 col-lg-10">
         <a class="no-underline black dim" href="{{ $link }}" target="_blank">
-          <h2 class="f4 fw1 dosis-bold mt0 lh-title">{{ get_the_title() }}</h2>
+          <h2 class="f4 fw1 dosis-bold mt0 lh-title">@php echo get_the_title(); @endphp</h2>
         </a>
         <p class="f6 f5-l lh-copy dosis">@php the_excerpt() @endphp</p>
       </div>
